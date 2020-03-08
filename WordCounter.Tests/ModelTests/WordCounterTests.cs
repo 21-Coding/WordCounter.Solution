@@ -10,7 +10,7 @@ namespace Counter.Test
     [TestMethod]
     public void SymbolChecker_ReturnsSymbolChecker_ReturnObject()
     {
-      string exWord = "Hello";
+      string exWord = "Hello@@";
       string weWant = "hello";
       Assert.AreEqual(weWant, Word.SymbolChecker(exWord));
 
