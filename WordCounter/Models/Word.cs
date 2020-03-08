@@ -12,9 +12,10 @@ namespace Counter.Models
 
     public static string SymbolChecker(string word)
     {
-      string withNumbers = word.Trim(_numbersArr);
-      string withSymbols = word.Trim(_symbolsArr);
-      return withNumbers.ToLower() + withSymbols.ToLower();
+      string withNumbers = word.Trim(_numbersArr).ToLower();
+      string withSymbols = word.Trim(_symbolsArr).ToLower();
+      string combinedChecks = withNumbers + withSymbols;
+      return combinedChecks;
     }
   }
 }

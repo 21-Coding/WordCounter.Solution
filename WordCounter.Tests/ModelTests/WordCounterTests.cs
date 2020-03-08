@@ -1,11 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Word.Models;
-using System;
+using Counter.Models;
 
-namespace Word.Test
+
+namespace Counter.Test
 {
   [TestClass]
-  public class MakeFileTests
+  public class WordCounterTests
   {
     [TestMethod]
     public void SymbolChecker_ReturnsSymbolChecker_ReturnObject()
