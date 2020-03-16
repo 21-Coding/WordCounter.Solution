@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WordsTally
+namespace Word
 {
     class Program
     {
