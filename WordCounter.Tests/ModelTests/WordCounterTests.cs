@@ -18,8 +18,8 @@ namespace Counter.Test
     [TestMethod]
     public void HowManyWordsASent_ReturnsHowManyWordsASent_()
     {
-      Word aWordCan = new Word("", "My eye is on the sparrow.");
-      Assert.AreEqual(0, aWordCan.HowManyWordsASent());
+      Word aWordCan = new Word("My eye is on the sparrow.", "eye");
+      Assert.AreEqual(1, aWordCan.HowManyWordsASent());
 
     }
   }
