@@ -34,6 +34,13 @@ namespace Counter.Test
       Assert.AreEqual(1, aWordCan.HowManyWordsASent());
 
     }
+    [TestMethod]
+    public void HowManyWordsASent_ReturnsHowManyWordsASent_2()
+    {
+      Word aWordCan = new Word("How much wood could a wood chuck chuck?", "wood");
+      Assert.AreEqual(2, aWordCan.HowManyWordsASent());
+
+    }
 
   }
 }
