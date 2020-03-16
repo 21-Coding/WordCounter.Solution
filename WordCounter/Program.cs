@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Word
+namespace Counter.Models
 {
     class Program
     {
@@ -14,7 +14,31 @@ namespace Word
       }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            QuickText("Welcome to Word Counter!");
+            Console.Write("Please enter a word:");
+
+            string input = Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("Please enter a sentence:");
+
+            string inputSent = Console.ReadLine();
+            Console.Clear();
+
+            Word newWord = new Word(userSent, userWord);
+
+            newWord.SymbolChecker();
+            newWord.HowManyWordsASent();
+            if (newWord.HowManyWordsASent() == 0)
+            {
+              QuickText("Your word is not in the sentence.");
+            }
+            else
+            {
+              QuickText("Your word" + newWord.Count + "has" + newWord.HowManyWordsASent() + " instances in this sentence.");
+            }
+
+
         }
     }
 }
