@@ -22,11 +22,18 @@ namespace Counter.Test
       Assert.AreEqual(aWordCan.Count, "eye");
     }
     [TestMethod]
+    public void Word_CreatesNewInstancesOfWordWithChosenSentence()
+    {
+      Word aWordCan = new Word("My eye is on the sparrow.", "eye");
+      Assert.AreEqual(aWordCan.FullSent, "My eye is on the sparrow.");
+    }
+    [TestMethod]
     public void HowManyWordsASent_ReturnsHowManyWordsASent_()
     {
       Word aWordCan = new Word("My eye is on the sparrow.", "eye");
       Assert.AreEqual(1, aWordCan.HowManyWordsASent());
 
     }
+
   }
 }
