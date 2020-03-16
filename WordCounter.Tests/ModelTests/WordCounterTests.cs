@@ -16,6 +16,12 @@ namespace Counter.Test
 
     }
     [TestMethod]
+    public void Word_CreatesNewInstancesOfWordWithChosenWord_eye()
+    {
+      Word aWordCan = new Word("My eye is on the sparrow.", "eye");
+      Assert.AreEqual(aWordCan.Count, "eye");
+    }
+    [TestMethod]
     public void HowManyWordsASent_ReturnsHowManyWordsASent_()
     {
       Word aWordCan = new Word("My eye is on the sparrow.", "eye");
