@@ -5846,11 +5846,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dominiqueyoumans/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectUniqueName": "/Users/dominiqueyoumans/Desktop/newWords/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
       "projectName": "WordCounter.Tests",
-      "projectPath": "/Users/dominiqueyoumans/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectPath": "/Users/dominiqueyoumans/Desktop/newWords/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
       "packagesPath": "/Users/dominiqueyoumans/.nuget/packages/",
-      "outputPath": "/Users/dominiqueyoumans/Desktop/WordCounter.Solution/WordCounter.Tests/obj/",
+      "outputPath": "/Users/dominiqueyoumans/Desktop/newWords/WordCounter.Solution/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5867,8 +5867,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/Users/dominiqueyoumans/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj": {
-              "projectPath": "/Users/dominiqueyoumans/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj"
+            "/Users/dominiqueyoumans/Desktop/newWords/WordCounter.Solution/WordCounter/WordCounter.csproj": {
+              "projectPath": "/Users/dominiqueyoumans/Desktop/newWords/WordCounter.Solution/WordCounter/WordCounter.csproj"
             }
           }
         }

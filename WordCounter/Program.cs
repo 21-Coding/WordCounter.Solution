@@ -12,12 +12,12 @@ namespace Counter.Models
             System.Threading.Thread.Sleep(50);
           }
       }
-        static void Main(string[] args)
+        static void Main()
         {
             QuickText("Welcome to Word Counter!");
             Console.Write("Please enter a word:");
 
-            string input = Console.ReadLine();
+            string inputWord = Console.ReadLine();
             Console.Clear();
 
             Console.Write("Please enter a sentence:");
@@ -25,9 +25,9 @@ namespace Counter.Models
             string inputSent = Console.ReadLine();
             Console.Clear();
 
-            Word newWord = new Word(userSent, userWord);
+            Word newWord = new Word(inputSent, inputWord);
 
-            newWord.SymbolChecker();
+            
             newWord.HowManyWordsASent();
             if (newWord.HowManyWordsASent() == 0)
             {
