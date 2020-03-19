@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Counter.Models
 {
     class Program
@@ -25,18 +26,19 @@ namespace Counter.Models
             string inputSent = Console.ReadLine();
             Console.Clear();
 
-            Word newWord = new Word(inputSent, inputWord);
+            // Word newWord = new Word(inputSent);
+            // int countWords = newWord.HowManyWordsASent();
+            // countWords.HowManyWordsASent();
 
-            
-            newWord.HowManyWordsASent();
-            if (newWord.HowManyWordsASent() == 0)
-            {
-              QuickText("Your word is not in the sentence.");
-            }
-            else
-            {
-              QuickText("Your word" + newWord.Count + "has" + newWord.HowManyWordsASent() + " instances in this sentence.");
-            }
+
+            // if ( countWords > 1 )
+            // {
+              
+            //   QuickText($"There are {countWords} instances of {inputWord}.");
+            // }
+            // else {
+            //   QuickText("Try again.");
+            // }
 
 
         }
