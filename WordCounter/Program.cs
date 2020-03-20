@@ -19,7 +19,7 @@ namespace Counter.Models
             Console.Write("Please enter a sentence:");
             string inputSent = Console.ReadLine();
 
-            Console.Write("Please give me a word to count in that sentece:");
+            Console.Write("Please give me a word in that sentence to count:");
             string inputWord = Console.ReadLine();
             Console.Clear();
 

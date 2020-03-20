@@ -34,7 +34,7 @@ namespace Counter.Models
 
       string[] headCounts = FullSent.Split();
       var iFound = from head in headCounts
-                  where head == Count
+                  where head.ToLower() == Count.ToLower()
                   select head;
       return iFound.Count();
     }
