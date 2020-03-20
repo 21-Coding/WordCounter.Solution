@@ -16,14 +16,14 @@ namespace Counter.Models
         static void Main()
         {
             QuickText("Welcome to Word Counter!");
-            Console.Write("Please enter a word:");
+            Console.Write("Please enter a sentence:");
+            string inputSent = Console.ReadLine();
 
+            Console.Write("Please give me a word to count in that sentece:");
             string inputWord = Console.ReadLine();
             Console.Clear();
 
-            Console.Write("Please enter a sentence:");
 
-            string inputSent = Console.ReadLine();
             Word newWord = new Word(inputSent, inputWord);
 
             if (newWord.HowManyWordsASent() == 0)
