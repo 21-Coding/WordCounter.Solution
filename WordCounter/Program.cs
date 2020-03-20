@@ -24,7 +24,7 @@ namespace Counter.Models
             Console.Write("Please enter a sentence:");
 
             string inputSent = Console.ReadLine();
-            Word newWord = new Word(inputSent, inputSent);
+            Word newWord = new Word(inputSent, inputWord);
 
             if (newWord.HowManyWordsASent() == 0)
             {
