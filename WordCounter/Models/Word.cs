@@ -32,7 +32,7 @@ namespace Counter.Models
     public int HowManyWordsASent()
     {
 
-      string[] headCounts = FullSent.Split().Replace(" ", "");
+      string[] headCounts = FullSent.Split();
       var iFound = from head in headCounts
                   where head.ToLower() == Count.ToLower()
                   select head;
