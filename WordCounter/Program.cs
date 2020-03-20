@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 
 namespace Counter.Models
@@ -15,8 +16,13 @@ namespace Counter.Models
       }
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White; 
             QuickText("Welcome to Word Counter!");
-            Console.Write("Please enter a sentence:");
+            System.Threading.Thread.Sleep(1000);
+
+            Console.Clear();
+            QuickText("Please enter a sentence:");
             string inputSent = Console.ReadLine();
 
             Console.Write("Please give me a word in that sentence to count:");
@@ -28,11 +34,18 @@ namespace Counter.Models
 
             if (newWord.HowManyWordsASent() == 0)
             {
-              QuickText("Nope");
+              Console.ForegroundColor = ConsoleColor.Red;
+              QuickText("Error, please return to the main menu. Good Bye.");
+              System.Threading.Thread.Sleep(1000);
+              Console.Clear();
+              Main();
             }
             else 
             {
-              QuickText("Looks like " + newWord.Count + "shows up " + newWord.HowManyWordsASent() + "instances in your sentence.");
+              QuickText("Looks like " + newWord.Count + " shows up " + newWord.HowManyWordsASent() + " time(s) in your sentence.");
+              System.Threading.Thread.Sleep(1000);
+              Console.Clear();
+              Main();
             }
 
             // int countWords = newWord.HowManyWordsASent();
