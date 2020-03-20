@@ -24,9 +24,17 @@ namespace Counter.Models
             Console.Write("Please enter a sentence:");
 
             string inputSent = Console.ReadLine();
-            Console.Clear();
+            Word newWord = new Word(inputSent, inputSent);
 
-            // Word newWord = new Word(inputSent);
+            if (newWord.HowManyWordsASent() == 0)
+            {
+              QuickText("Nope");
+            }
+            else 
+            {
+              QuickText("Looks like " + newWord.Count + "shows up " + newWord.HowManyWordsASent() + "instances in your sentence.");
+            }
+
             // int countWords = newWord.HowManyWordsASent();
             // countWords.HowManyWordsASent();
 
