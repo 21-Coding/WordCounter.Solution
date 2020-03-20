@@ -36,7 +36,7 @@ A program that gathers both a word and sentence from a user, then checks how fre
 
 ### Known Bugs
 
-Counter method returns invalid count.
+App does not remove whitespace from end of user word input. Word search must be without white space at the end.
 
 ### Support and contact details
 
